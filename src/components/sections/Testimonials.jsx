@@ -253,7 +253,11 @@ export const Testimonials = () => {
                   <img
                     src={current.avatar}
                     alt={current.name}
+                    width="80"
+                    height="80"
                     className="w-16 h-16 sm:w-20 sm:h-20 rounded-full ring-4 ring-primary/10 shadow-lg"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <span className="absolute -bottom-1 -right-1 w-5 h-5 bg-green-500 rounded-full border-2 border-white" />
                 </div>

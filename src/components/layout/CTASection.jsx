@@ -11,7 +11,7 @@ export const CTASection = ({
   href = "/contact"
 }) => {
   const buttonClassName =
-    'inline-flex items-center justify-center gap-2 bg-white text-gray-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-all hover:scale-105 active:scale-95 group shadow-xl';
+    'inline-flex items-center justify-center gap-2 bg-primary text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-primary-dark transition-all hover:scale-105 active:scale-95 group shadow-xl';
   const isInternalLink = href.startsWith('/');
 
   return (
@@ -20,7 +20,7 @@ export const CTASection = ({
         {/* Background blobs */}
         <div className="absolute top-0 left-0 w-full h-full -z-10 pointer-events-none">
           <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-primary/20 blur-[100px] rounded-full" />
-          <div className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[50%] bg-blue-600/20 blur-[100px] rounded-full" />
+          <div className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[50%] bg-secondary/20 blur-[100px] rounded-full" />
         </div>
 
         <div className="max-w-3xl mx-auto relative z-10">

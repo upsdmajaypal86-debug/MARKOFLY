@@ -1,19 +1,17 @@
 @import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-
 @theme {
-  --color-primary-light: #60a5fa;
-  --color-primary: #3b82f6;
-  --color-primary-dark: #2563eb;
+  --color-primary-light: #7ba8ff;
+  --color-primary: #2f76f5;
+  --color-primary-dark: #1f4ecc;
   
-  --color-secondary-light: #a78bfa;
-  --color-secondary: #8b5cf6;
-  --color-secondary-dark: #7c3aed;
+  --color-secondary-light: #b7c7ff;
+  --color-secondary: #081a40;
+  --color-secondary-dark: #051027;
   
-  --color-accent-light: #f472b6;
-  --color-accent: #ec4899;
-  --color-accent-dark: #db2777;
+  --color-accent-light: #d9e5ff;
+  --color-accent: #7ab1ff;
+  --color-accent-dark: #4f8cff;
 
   --font-sans: "Inter", "system-ui", "sans-serif";
 
@@ -35,7 +33,9 @@
 }
 
 body {
-  @apply bg-slate-50 text-slate-900 antialiased overflow-x-hidden;
+  background-color: #f6f8ff;
+  color: #081a40;
+  @apply antialiased overflow-x-hidden;
   font-family: 'Inter', sans-serif;
 }
 
@@ -48,11 +48,11 @@ body {
 }
 
 .text-gradient {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent;
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-secondary;
 }
 
 .btn-gradient {
-  @apply bg-gradient-to-r from-primary to-secondary hover:from-primary-dark hover:to-secondary-dark text-white transition-all duration-300;
+  @apply bg-gradient-to-r from-primary to-accent hover:from-primary-dark hover:to-accent-dark text-white transition-all duration-300;
 }
 
 /* Custom Scrollbar */

@@ -1,5 +1,5 @@
 export const paidAdsSeo = {
-  title: 'Paid Advertising & PPC | Performance Marketing Services | INCREGO',
+  title: 'Paid Advertising & PPC | Performance Marketing Services | markofly',
   description:
     'Scale your business with precision-targeted paid advertising. We manage high-performance Google Ads, Meta Ads, and LinkedIn campaigns that drive ROI.',
   keywords:
@@ -148,3 +148,4 @@ export const paidAdsFaqs = [
       'Yes, we provide creative direction and ad copywriting. We also partner with designers and videographers for high-end visual assets if needed.',
   },
 ];
+

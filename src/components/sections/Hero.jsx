@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Play, Sparkles } from 'lucide-react';
 import { Button, Section } from '../ui';
-import HeroImage from '../../assets/girl2.png';
+import HeroImage from '../../assets/girl5.webp';
 import { Link } from 'react-router-dom';
 
 
@@ -23,7 +23,7 @@ export const Hero = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <h1 className="text-5xl md:text-6xl font-extrabold text-[#111827] leading-[1.2] mb-6">
-            Building <span className="text-secondary">Empathetic</span> Digital Products.
+            Building <span className="text-primary">Empathetic</span> Digital Products.
           </h1>
 
           <p className="text-lg text-gray-600 mb-10 leading-relaxed max-w-md">
@@ -57,8 +57,11 @@ export const Hero = () => {
               <img 
                 src={HeroImage} 
                 alt="MARKOFLY Hero"
+                width="1200"
+                height="799"
                 className="w-full h-full object-cover"
                 loading="eager"
+                decoding="async"
               />
             </div>
 

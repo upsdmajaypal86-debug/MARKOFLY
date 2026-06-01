@@ -37,7 +37,11 @@ export const About = () => {
               <img 
                 src={image2} 
                 alt="team" 
+                width="600"
+                height="400"
                 className="w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
               />
             </motion.div>
 
@@ -50,9 +54,12 @@ export const About = () => {
             >
               <img 
                 src={image1} 
-
                 alt="meeting" 
+                width="600"
+                height="400"
                 className="w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
               />
             </motion.div>
           </div>

@@ -1,7 +1,7 @@
 export const seoSeo = {
-  title: 'SEO & Search Strategy | Organic Growth Services | INCREGO',
+  title: 'SEO & Search Strategy | Organic Growth Services | markofly',
   description:
-    'Increase your search visibility and drive high-quality organic traffic with INCREGO SEO and search strategy services. Data-driven growth for modern brands.',
+    'Increase your search visibility and drive high-quality organic traffic with markofly SEO and search strategy services. Data-driven growth for modern brands.',
   keywords:
     'seo services, search engine optimization, technical seo, content strategy, organic growth, keyword research, link building services',
 };
@@ -148,3 +148,4 @@ export const seoFaqs = [
       'We focus on three main pillars: keyword rankings, organic traffic growth, and most importantly, lead/sale conversions attributed to search traffic.',
   },
 ];
+

@@ -1,7 +1,7 @@
 export const automationSeo = {
-  title: 'Business Automation & AI | Efficient Scaling Services | INCREGO',
+  title: 'Business Automation & AI | Efficient Scaling Services | markofly',
   description:
-    'Scale your operations without scaling your headcount. INCREGO provides custom business automation, AI integration, and technical advisory for modern brands.',
+    'Scale your operations without scaling your headcount. markofly provides custom business automation, AI integration, and technical advisory for modern brands.',
   keywords:
     'business automation services, ai integration agency, workflow automation, custom crm development, technical advisor, internal tools development, efficiency scaling',
 };
@@ -148,3 +148,4 @@ export const automationFaqs = [
       'It’s like having an on-demand CTO. We help you make strategic decisions about your tech stack, security, and product roadmap so you can avoid costly technical debt.',
   },
 ];
+

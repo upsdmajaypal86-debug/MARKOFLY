@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import { motion } from 'framer-motion';
 import { Hero } from '../components/sections/Hero';
-import { Services } from '../components/sections/Services';
-import { WhyUs } from '../components/sections/WhyUs';
-import { Testimonials } from '../components/sections/Testimonials';
-import { CTASection } from '../components/layout/CTASection';
-import { Process } from '../components/sections/Process';
-import { FAQ } from '../components/sections/FAQ';
+
+const Services = lazy(() => import('../components/sections/Services').then((module) => ({ default: module.Services })));
+const WhyUs = lazy(() => import('../components/sections/WhyUs').then((module) => ({ default: module.WhyUs })));
+const Testimonials = lazy(() => import('../components/sections/Testimonials').then((module) => ({ default: module.Testimonials })));
+const CTASection = lazy(() => import('../components/layout/CTASection').then((module) => ({ default: module.CTASection })));
+const Process = lazy(() => import('../components/sections/Process').then((module) => ({ default: module.Process })));
+const FAQ = lazy(() => import('../components/sections/FAQ').then((module) => ({ default: module.FAQ })));
 
 export const Home = () => {
   return (
@@ -18,12 +19,14 @@ export const Home = () => {
       className="bg-white"
     >
       <Hero />
-      <WhyUs />
-      <Process />
-      <Services />
-      <Testimonials />
-      <FAQ />
-      <CTASection />
+      <Suspense fallback={<div className="min-h-[400px]" />}>
+        <WhyUs />
+        <Process />
+        <Services />
+        <Testimonials />
+        <FAQ />
+        <CTASection />
+      </Suspense>
     </motion.div>
   );
 };

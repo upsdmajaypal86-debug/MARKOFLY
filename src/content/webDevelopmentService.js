@@ -1,7 +1,7 @@
 export const webDevelopmentSeo = {
-  title: 'Web Development Services | Custom Websites & Web Apps | INCREGO',
+  title: 'Web Development Services | Custom Websites & Web Apps | markofly',
   description:
-    'INCREGO delivers custom web development services for brands that need fast, SEO-ready websites, scalable web apps, and conversion-focused digital experiences.',
+    'markofly delivers custom web development services for brands that need fast, SEO-ready websites, scalable web apps, and conversion-focused digital experiences.',
   keywords:
     'web development services, custom website development, web application development, react development agency, next.js development, technical seo services, responsive web design agency',
 };
@@ -153,3 +153,4 @@ export const webDevelopmentFaqs = [
       'Yes. We can continue with maintenance, performance improvements, content support, feature enhancements, and conversion-focused optimization after the site goes live.',
   },
 ];
+

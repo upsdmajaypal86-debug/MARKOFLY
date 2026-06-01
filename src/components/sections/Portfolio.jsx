@@ -130,7 +130,10 @@ export const Portfolio = () => {
                 <img
                   src={project.image}
                   alt={project.title}
+                  width="800"
+                  height="533"
                   loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
                 />
 

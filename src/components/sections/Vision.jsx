@@ -9,7 +9,7 @@ const visionPillars = [
     title: 'Inclusion',
     description: 'We believe digital experiences should be accessible to everyone, regardless of ability or background.',
     icon: Compass,
-    color: 'from-blue-500 to-cyan-400'
+    color: 'from-primary to-accent'
   },
   {
     id: 2,
@@ -48,7 +48,7 @@ export const Vision = () => {
             A vision built on <span className="text-gradient">human values.</span>
           </h2>
           <p className="text-xl text-slate-600 mb-12 leading-relaxed max-w-xl">
-            At INCREGO, we don't just build websites; we create digital ecosystems that empower brands to reach their full potential while staying true to their human core.
+            At MARKOFLY, we don't just build websites; we create digital ecosystems that empower brands to reach their full potential while staying true to their human core.
           </p>
 
           <div className="flex flex-col gap-6">

@@ -1,7 +1,7 @@
 export const brandIdentitySeo = {
-  title: 'Brand Identity & Visual Design | Strategic Branding Services | INCREGO',
+  title: 'Brand Identity & Visual Design | Strategic Branding Services | markofly',
   description:
-    'Build a brand that commands attention. INCREGO branding services combine strategy and visual excellence to create identities that stick and stories that sell.',
+    'Build a brand that commands attention. markofly branding services combine strategy and visual excellence to create identities that stick and stories that sell.',
   keywords:
     'brand identity design, visual branding, logo design services, brand strategy agency, corporate identity, brand style guides, marketing collateral design',
 };
@@ -146,3 +146,4 @@ export const brandIdentityFaqs = [
       'Absolutely. Most of our branding projects lead directly into a web development phase to ensure the new identity is perfectly translated to digital.',
   },
 ];
+

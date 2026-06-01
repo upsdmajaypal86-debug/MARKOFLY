@@ -19,7 +19,7 @@ const FeatureCard = ({ icon, title, description, iconBg, iconColor, delay }) => 
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6, delay }}
-      className="bg-slate-900/50 p-8 rounded-4xl border border-slate-800 hover:border-blue-500/50 transition-all duration-300 group"
+      className="bg-slate-900/50 p-8 rounded-4xl border border-slate-800 hover:border-primary/50 transition-all duration-300 group"
     >
       <div className={`w-14 h-14 ${iconBg} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
         <div className={iconColor}>{icon}</div>
@@ -38,15 +38,15 @@ export const WhyUs = () => {
       icon: <Users className="h-7 w-7" />,
       title: "Expert Team",
       description: "Senior strategists, designers, and engineers working as one cross-functional unit.",
-      iconBg: "bg-blue-500/10",
-      iconColor: "text-blue-400",
+      iconBg: "bg-primary/10",
+      iconColor: "text-primary",
       delay: 0.1
     },
     {
       icon: <Cpu className="h-7 w-7" />,
       title: "Cutting Edge Tech",
       description: "We use AI workflows and modern frameworks to ship products that age well.",
-      iconBg: "bg-purple-500/10",
+      iconBg: "bg-secondary/10",
       iconColor: "text-purple-400",
       delay: 0.2
     },
@@ -54,8 +54,8 @@ export const WhyUs = () => {
       icon: <Globe className="h-7 w-7" />,
       title: "Global Delivery",
       description: "Reliable execution across time zones with transparent updates at every milestone.",
-      iconBg: "bg-pink-500/10",
-      iconColor: "text-pink-400",
+      iconBg: "bg-accent/10",
+      iconColor: "text-accent",
       delay: 0.3
     },
     {
@@ -69,7 +69,7 @@ export const WhyUs = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#020617] text-slate-100 font-sans selection:bg-blue-500/30">
+    <div className="min-h-screen bg-[#020617] text-slate-100 font-sans selection:bg-primary/30">
       
 
       {/* Main Section */}
@@ -89,7 +89,7 @@ export const WhyUs = () => {
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="inline-block px-4 py-1.5 text-[10px] font-bold tracking-[0.2em] text-blue-400 uppercase border border-blue-400/20 rounded-full mb-8 bg-blue-400/5"
+                className="inline-block px-4 py-1.5 text-[10px] font-bold tracking-[0.2em] text-primary uppercase border border-primary/20 rounded-full mb-8 bg-primary/5"
               >
                 Why Choose Us
               </motion.span>
@@ -108,7 +108,7 @@ export const WhyUs = () => {
 
             {/* Award Badge */}
             <div className="inline-flex items-center gap-5 px-6 py-4 bg-slate-900/80 border border-slate-800 rounded-2xl">
-              <div className="w-12 h-12 rounded-xl bg-linear-to-br from-blue-500 to-purple-600 flex items-center justify-center shadow-xl shadow-blue-500/20">
+              <div className="w-12 h-12 rounded-xl bg-linear-to-br from-primary to-accent flex items-center justify-center shadow-xl shadow-primary/20">
                 <Sparkles className="h-6 w-6 text-white" />
               </div>
               <div>

@@ -8,9 +8,9 @@ import { digitalMarketingFaqs, digitalMarketingSeo } from '../../content/digital
 import { automationFaqs, automationSeo } from '../../content/automationService';
 
 const defaultSeo = {
-  title: 'INCREGO | Digital Growth and Strategy Agency',
+  title: 'markofly | Digital Growth and Strategy Agency',
   description:
-    'INCREGO is a digital growth and strategy agency building premium websites, brands, and digital experiences for modern businesses.',
+    'markofly is a digital growth and strategy agency building premium websites, brands, and digital experiences for modern businesses.',
   keywords:
     'digital agency, web design agency, web development services, branding agency, SEO services, UX design agency',
   robots: 'index, follow',
@@ -20,16 +20,16 @@ const defaultSeo = {
 const routeSeo = {
   '/': defaultSeo,
   '/about': {
-    title: 'About INCREGO | Strategy-First Digital Agency',
+    title: 'About markofly | Strategy-First Digital Agency',
     description:
-      'Learn how INCREGO helps modern brands connect strategy, design, and engineering to build digital products that feel sharp and perform well.',
+      'Learn how markofly helps modern brands connect strategy, design, and engineering to build digital products that feel sharp and perform well.',
     keywords:
-      'about incrego, digital strategy agency, product design agency, web development team, creative technology studio',
+      'about markofly, digital strategy agency, product design agency, web development team, creative technology studio',
   },
   '/services': {
-    title: 'Digital Services | Web Development, UX, Branding and Growth | INCREGO',
+    title: 'Digital Services | Web Development, UX, Branding and Growth | markofly',
     description:
-      'Explore INCREGO digital services including web development, UI and UX design, branding, mobile experiences, digital marketing, and technical advisory.',
+      'Explore markofly digital services including web development, UI and UX design, branding, mobile experiences, digital marketing, and technical advisory.',
     keywords:
       'digital services, web development, ui ux design, branding services, digital marketing agency, mobile app development',
   },
@@ -43,7 +43,7 @@ const routeSeo = {
         serviceType: 'Custom Web Development',
         provider: {
           '@type': 'Organization',
-          name: 'INCREGO',
+          name: 'markofly',
           url: new URL('/', url).toString(),
         },
         areaServed: 'Worldwide',
@@ -98,7 +98,7 @@ const routeSeo = {
         serviceType: 'Search Engine Optimization',
         provider: {
           '@type': 'Organization',
-          name: 'INCREGO',
+          name: 'markofly',
           url: new URL('/', url).toString(),
         },
         areaServed: 'Worldwide',
@@ -153,7 +153,7 @@ const routeSeo = {
         serviceType: 'Performance Marketing',
         provider: {
           '@type': 'Organization',
-          name: 'INCREGO',
+          name: 'markofly',
           url: new URL('/', url).toString(),
         },
         areaServed: 'Worldwide',
@@ -208,7 +208,7 @@ const routeSeo = {
         serviceType: 'Branding Services',
         provider: {
           '@type': 'Organization',
-          name: 'INCREGO',
+          name: 'markofly',
           url: new URL('/', url).toString(),
         },
         areaServed: 'Worldwide',
@@ -263,7 +263,7 @@ const routeSeo = {
         serviceType: 'Marketing Services',
         provider: {
           '@type': 'Organization',
-          name: 'INCREGO',
+          name: 'markofly',
           url: new URL('/', url).toString(),
         },
         areaServed: 'Worldwide',
@@ -318,7 +318,7 @@ const routeSeo = {
         serviceType: 'Automation Services',
         provider: {
           '@type': 'Organization',
-          name: 'INCREGO',
+          name: 'markofly',
           url: new URL('/', url).toString(),
         },
         areaServed: 'Worldwide',
@@ -364,16 +364,16 @@ const routeSeo = {
     ],
   },
   '/contact': {
-    title: 'Contact INCREGO | Start Your Next Digital Project',
+    title: 'Contact markofly | Start Your Next Digital Project',
     description:
-      'Contact INCREGO to discuss website development, design, branding, or digital growth support for your next project.',
+      'Contact markofly to discuss website development, design, branding, or digital growth support for your next project.',
     keywords:
       'contact digital agency, website project inquiry, web development consultation, branding consultation',
   },
 };
 
 const fallbackSeo = {
-  title: 'Page Not Found | INCREGO',
+  title: 'Page Not Found | markofly',
   description: 'The page you are looking for could not be found.',
   keywords: 'page not found, 404',
   robots: 'noindex, nofollow',
@@ -443,7 +443,7 @@ export const RouteSeo = () => {
     setMetaContent('name', 'keywords', seo.keywords ?? defaultSeo.keywords);
     setMetaContent('name', 'robots', seo.robots ?? defaultSeo.robots);
     setMetaContent('name', 'theme-color', '#3b82f6');
-    setMetaContent('property', 'og:site_name', 'INCREGO');
+    setMetaContent('property', 'og:site_name', 'markofly');
     setMetaContent('property', 'og:type', seo.type ?? defaultSeo.type);
     setMetaContent('property', 'og:title', seo.title);
     setMetaContent('property', 'og:description', seo.description);
@@ -458,3 +458,4 @@ export const RouteSeo = () => {
 
   return null;
 };
+

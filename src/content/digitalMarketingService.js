@@ -1,7 +1,7 @@
 export const digitalMarketingSeo = {
-  title: 'Digital Marketing & Growth | Multi-Channel Strategy | INCREGO',
+  title: 'Digital Marketing & Growth | Multi-Channel Strategy | markofly',
   description:
-    'Accelerate your growth with data-driven digital marketing. INCREGO combines content strategy, email marketing, and social media to scale your brand reach.',
+    'Accelerate your growth with data-driven digital marketing. markofly combines content strategy, email marketing, and social media to scale your brand reach.',
   keywords:
     'digital marketing agency, growth marketing services, content marketing strategy, email marketing automation, social media management, lead generation agency, digital growth support',
 };
@@ -148,3 +148,4 @@ export const digitalMarketingFaqs = [
       'Success is measured by pre-defined KPIs like lead volume, conversion rate, customer acquisition cost (CAC), and overall return on ad spend (ROAS).',
   },
 ];
+
