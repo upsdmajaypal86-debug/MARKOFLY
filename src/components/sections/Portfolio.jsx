@@ -1,56 +1,56 @@
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowUpRight, Layers } from 'lucide-react';
+import { ArrowUpRight, Layers, Building2 } from 'lucide-react';
 import { Section } from '../ui';
 
-const projects = [
+const clients = [
   {
     id: 1,
-    title: 'Modern Bank App',
+    clientName: 'Sarah Jenkins',
+    company: 'Fintech Dynamics',
+    role: 'VP of Product',
     category: 'Fintech',
-    description: 'A seamless digital banking experience built for the modern era.',
-    image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800',
-    tags: ['UI/UX', 'React', 'Node.js'],
+    tags: ['UI/UX Design', 'React App', 'Design System'],
   },
   {
     id: 2,
-    title: 'Eco-Friendly E-com',
+    clientName: 'Marcus Vance',
+    company: 'EcoShop Global',
+    role: 'Founder & CEO',
     category: 'E-commerce',
-    description: 'A sustainable shopping platform with a strong green identity.',
-    image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=800',
-    tags: ['Shopify', 'Design', 'Branding'],
+    tags: ['Shopify Plus', 'Brand Identity', 'Conversion Optimization'],
   },
   {
     id: 3,
-    title: 'Health Insight Web',
+    clientName: 'Dr. Aris Thorne',
+    company: 'Pulse Health',
+    role: 'Chief Medical Officer',
     category: 'Healthcare',
-    description: 'Patient-centric health tracking and analytics dashboard.',
-    image: 'https://images.unsplash.com/photo-1576091160550-217359f4ecf8?auto=format&fit=crop&q=80&w=800',
-    tags: ['Dashboard', 'Analytics', 'React'],
+    tags: ['Analytics Dashboard', 'HIPAA Compliance', 'React'],
   },
   {
     id: 4,
-    title: 'Global Travel Portal',
+    clientName: 'Elena Rostova',
+    company: 'Vanguard Expeditions',
+    role: 'Head of Marketing',
     category: 'Travel',
-    description: 'Discover and book extraordinary experiences around the world.',
-    image: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&q=80&w=800',
-    tags: ['Next.js', 'Maps API', 'UI/UX'],
+    tags: ['Next.js', 'Booking Engine', 'Maps Integration'],
   },
   {
     id: 5,
-    title: 'AI Smart Home App',
+    clientName: 'David Chen',
+    company: 'Aura Automations',
+    role: 'Lead Architect',
     category: 'Smart Home',
-    description: 'Intelligent home automation with AI-powered controls.',
-    image: 'https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&q=80&w=800',
-    tags: ['IoT', 'AI', 'Mobile App'],
+    tags: ['IoT Dashboard', 'AI Interfaces', 'Mobile UX'],
   },
   {
     id: 6,
-    title: 'Creative Studio Web',
+    clientName: 'Claire Duprès',
+    company: 'Atelier Creative Studio',
+    role: 'Creative Director',
     category: 'Design',
-    description: 'Portfolio and showcase for a world-class design studio.',
-    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800',
-    tags: ['Branding', 'Animation', 'WebGL'],
+    tags: ['WebGL Showcase', 'Interactive Web', 'Branding'],
   },
 ];
 
@@ -58,36 +58,36 @@ const categories = ['All', 'Fintech', 'E-commerce', 'Healthcare', 'Travel', 'Sma
 
 const containerVariants = {
   hidden: {},
-  visible: { transition: { staggerChildren: 0.1 } },
+  visible: { transition: { staggerChildren: 0.08 } },
 };
 
 const cardVariants = {
-  hidden: { opacity: 0, y: 40, scale: 0.95 },
-  visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.5 } },
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.35, ease: 'easeOut' } },
 };
 
 export const Portfolio = () => {
   const [filter, setFilter] = useState('All');
 
-  const filteredProjects = useMemo(() => {
-    return filter === 'All' ? projects : projects.filter((p) => p.category === filter);
+  const filteredClients = useMemo(() => {
+    return filter === 'All' ? clients : clients.filter((c) => c.category === filter);
   }, [filter]);
 
   return (
     <Section id="portfolio" className="relative py-24 overflow-hidden">
-      {/* Glow background */}
-      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10 blur-3xl" />
+      {/* Background glow overlay */}
+      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10 blur-3xl pointer-events-none" />
 
       {/* Header */}
       <div className="text-center max-w-3xl mx-auto mb-16">
         <div className="inline-flex items-center gap-2 bg-primary/10 text-primary text-xs font-semibold px-4 py-2 rounded-full mb-5">
-          <Layers size={14} /> Portfolio
+          <Layers size={14} /> Client Roster
         </div>
         <h2 className="text-4xl md:text-5xl font-bold mb-4">
-          Crafted with <span className="text-gradient">precision & creativity</span>
+          Trusted by <span className="text-gradient">industry pioneers</span>
         </h2>
         <p className="text-slate-500 text-lg">
-          We build beautiful, high-performance digital experiences.
+          We partner with visionary companies and leaders to build high-impact digital solutions.
         </p>
       </div>
 
@@ -99,7 +99,7 @@ export const Portfolio = () => {
             onClick={() => setFilter(cat)}
             className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
               filter === cat
-                ? 'bg-primary text-white shadow-lg'
+                ? 'bg-primary text-white shadow-md'
                 : 'bg-white/70 backdrop-blur border border-slate-200 text-slate-600 hover:border-primary/40 hover:text-primary'
             }`}
           >
@@ -108,61 +108,57 @@ export const Portfolio = () => {
         ))}
       </div>
 
-      {/* Grid */}
+      {/* Client List Grid */}
       <AnimatePresence mode="wait">
         <motion.div
           key={filter}
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
-          {filteredProjects.map((project) => (
+          {filteredClients.map((item) => (
             <motion.div
-              key={project.id}
+              key={item.id}
               variants={cardVariants}
               layout
-              whileHover={{ y: -8 }}
-              className="group relative rounded-3xl overflow-hidden bg-white/80 backdrop-blur-xl border border-white/50 shadow-lg hover:shadow-2xl transition-all duration-500"
+              whileHover={{ y: -4 }}
+              className="group relative flex flex-col justify-between p-8 rounded-3xl bg-white/80 backdrop-blur-xl border border-slate-200/80 hover:border-primary/40 shadow-sm hover:shadow-xl transition-all duration-300"
             >
-              {/* Image */}
-              <div className="relative h-64 overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  width="800"
-                  height="533"
-                  loading="lazy"
-                  decoding="async"
-                  className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
-                />
-
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-500" />
-
-                {/* Floating button */}
-                <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition">
-                  <div className="p-3 rounded-full bg-white text-black shadow-lg">
+              <div>
+                {/* Header Badge */}
+                <div className="flex items-center justify-between mb-6">
+                  <span className="text-xs font-semibold uppercase tracking-wider text-slate-400">
+                    {item.category}
+                  </span>
+                  <div className="p-2 rounded-full bg-slate-100 group-hover:bg-primary group-hover:text-white transition-colors duration-300 text-slate-500">
                     <ArrowUpRight size={16} />
                   </div>
                 </div>
+
+                {/* Company & Client Detail */}
+                <div className="mb-6">
+                  <div className="flex items-center gap-2 text-primary font-medium text-sm mb-1">
+                    <Building2 size={16} />
+                    <span>{item.company}</span>
+                  </div>
+                  <h3 className="text-2xl font-bold text-slate-900 group-hover:text-primary transition-colors">
+                    {item.clientName}
+                  </h3>
+                  <p className="text-xs text-slate-500 mt-1 font-medium">{item.role}</p>
+                </div>
               </div>
 
-              {/* Content */}
-              <div className="p-6">
-                <h3 className="text-lg font-semibold mb-1 group-hover:text-primary transition">
-                  {project.title}
-                </h3>
-                <p className="text-sm text-slate-500 mb-4">
-                  {project.description}
-                </p>
-
-                <div className="flex flex-wrap gap-2">
-                  {project.tags.map((tag) => (
-                    <span key={tag} className="text-xs px-3 py-1 rounded-full bg-slate-100">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
+              {/* Scope / Deliverables Tags */}
+              <div className="flex flex-wrap gap-2 pt-6 border-t border-slate-100">
+                {item.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="text-xs px-3 py-1 rounded-full bg-slate-100 text-slate-600 font-medium"
+                  >
+                    {tag}
+                  </span>
+                ))}
               </div>
             </motion.div>
           ))}
@@ -170,9 +166,9 @@ export const Portfolio = () => {
       </AnimatePresence>
 
       {/* CTA */}
-      <div className="text-center mt-20">
-        <button className="px-10 py-4 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-semibold shadow-lg hover:scale-105 transition">
-          Explore More Projects
+      <div className="text-center mt-16">
+        <button className="px-10 py-4 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-semibold shadow-lg hover:scale-105 transition duration-300">
+          Work With Us
         </button>
       </div>
     </Section>
