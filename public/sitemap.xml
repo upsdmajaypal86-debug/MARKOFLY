@@ -26,31 +26,37 @@
   </url>
 
   <url>
-    <loc>https://markofly.com/automation-service</loc>
+    <loc>https://markofly.com/services/automation</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://markofly.com/brand-identity-service</loc>
+    <loc>https://markofly.com/services/brand-identity</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://markofly.com/digital-marketing-service</loc>
+    <loc>https://markofly.com/services/digital-marketing</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://markofly.com/paid-ad-service</loc>
+    <loc>https://markofly.com/services/paid-ads</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://markofly.com/web-development-service</loc>
+    <loc>https://markofly.com/services/web-development</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://markofly.com/services/seo</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
